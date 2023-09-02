@@ -7,3 +7,7 @@
 {% for post in object_list %}
 <h4><a href="{% url 'blog:post_detail' post.id %}">{{ post }}</a></h4>
 {% endfor %}
+
+{% for post in post_list %}
+<h4><a href="{% url 'blog:post_detail' post.id %}">{{ post }}</a></h4>
+{% endfor %}
